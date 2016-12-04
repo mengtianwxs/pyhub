@@ -1,0 +1,8 @@
+import sys
+
+class pyhub(object):
+    @staticmethod
+    def config():
+        reload(sys)
+        sys.setdefaultencoding('utf-8')
+        
