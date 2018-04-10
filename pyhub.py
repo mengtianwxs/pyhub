@@ -1,4 +1,6 @@
 import sys
+from PyQt5.QtWidgets import QDesktopWidget
+
 
 def config():
     reload(sys)
