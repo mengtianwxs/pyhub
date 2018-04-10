@@ -5,6 +5,12 @@ def config():
     sys.setdefaultencoding('utf-8')
     print 'pyhub lib is running! and encoding is %s'% str(sys.getdefaultencoding())
 
+def centerWidget(self):
+    screen=QDesktopWidget().screenGeometry()
+    size=self.geometry()
+    half_width=(screen.width()-size.width())/2
+    half_height=(screen.height()-size.height())/2
+    self.move(half_width,half_height)
 #from left to right,top to bottom
 
 def paixu_maopao(lst):
